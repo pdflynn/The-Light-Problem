@@ -34,7 +34,7 @@ public class Display {
         // Set up the JFrame window
         window = new JFrame("The Light Problem");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        window.setSize(1000, 1000);
+        window.setSize(900, 800);
         window.setResizable(false);
         window.setLocationRelativeTo(null);
 

@@ -64,7 +64,7 @@ public class Light extends JPanel {
         light = new JLabel();
         light.setIcon(lightBulbOff);
 
-        bulbName = new JLabel("Bulb " + num);
+        bulbName = new JLabel("#" + num);
         this.setLayout(new GridLayout());
         this.add(bulbName);
         this.add(light);
