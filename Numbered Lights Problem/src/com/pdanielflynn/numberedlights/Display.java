@@ -70,7 +70,7 @@ public class Display {
         });
 
         // Add current day label
-        currentDayLabel = new JLabel("Current Day: " + 0);
+        currentDayLabel = new JLabel("Day " + 0);
         window.add(currentDayLabel);
 
         window.setVisible(true);
@@ -98,7 +98,10 @@ public class Display {
             }
         }
         currentDay++;
-        currentDayLabel.setText("Current Day: " + (currentDay - 1));
+        currentDayLabel.setText("Day " + (currentDay - 1));
+        if (currentDay == 101) {
+            nextDay.setEnabled(false);
+        }
         window.repaint();
     }
 
@@ -112,6 +115,7 @@ public class Display {
         for (int i = 1; i <= 100; i++) {
             lights[i].turnOn();
         }
+        nextDay.setEnabled(true);
         window.repaint();
     }
 }
