@@ -23,12 +23,10 @@ public class NumberedLights {
 
 
     /**
-     * Main method that initializes the lights array and does executes each day.
-     * Default amount of days is 100, but can be changed via Java argument. It
-     * then prints out info about each light.
+     * Main method that initializes the GUI by creating a new Display()
      * 
      * @param args
-     *            Number of days to execute
+     *            Unused
      */
     public static void main(String[] args) {
 
