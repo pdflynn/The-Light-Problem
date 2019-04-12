@@ -111,7 +111,7 @@ public class Display {
      */
     public void reset() {
         currentDay = 1;
-        currentDayLabel.setText("Current Day: " + 0);
+        currentDayLabel.setText("Day " + 0);
         for (int i = 1; i <= 100; i++) {
             lights[i].turnOn();
         }
